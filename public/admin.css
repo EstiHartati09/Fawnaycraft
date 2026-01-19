@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    background: #f6eee6;
+    font-family: "Times New Roman", serif;
+}
+
+.admin-wrapper {
+    padding: 60px;
+}
+
+/* TITLE */
+.admin-title {
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.admin-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+/* CARD */
+.admin-card {
+    width: 220px;
+    border: 2px solid #7b1e1e;
+    padding: 14px 12px;
+    text-align: center;
+    position: relative;
+    background: #fff;
+
+    /* INI KUNCI */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom:28px;
+    
+}
+
+/* IMAGE */
+.admin-card img,
+.img-placeholder {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 6px;
+}
+
+.img-placeholder {
+    border: 2px dashed #7a1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #7a1f1f;
+}
+
+/* CLOSE */
+.btn-close {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    text-decoration: none;
+    color: #7b1e1e;
+    font-size: 18px;
+}
+
+/* EDIT — KELUAR DARI KOTAK */
+.btn-edit {
+    margin-top: 14px;        /* JARAK DARI KOTAK */
+    background: #f2b27b;
+    padding: 6px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+
+    /* POSISI VISUAL DI LUAR KOTAK */
+    transform: translateY(100%);
+}
+
+/* AGAR GRID TIDAK RUSAK */
+.admin-card {
+    padding-bottom: 40px;
+}
+
+/* ADD */
+.admin-add {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.btn-add {
+    background: #7b1e1e;
+    color: #fff;
+    padding: 12px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #7b1e1e;
+    font-family: "Times New Roman", serif;
+}
+
+/* ================= DETAIL ADMIN ================= */
+.admin-detail {
+    margin-top: 40px;
+}
+
+.admin-action {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn-edit-admin {
+    background: #f2b27b;
+    padding: 10px 26px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.btn-back-admin {
+    background: #7b1e1e;
+    padding: 10px 26px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+/*Tambah Produk*/
+.admin-form {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #7b1e1e;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    color: #fff;
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+.btn-save {
+    background: #2ecc71;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 0;
+    font-size: 16px;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+/* ADMIN MODE CARD */
+.admin-mode {
+    position: relative;
+}
+
+/* BUTTON HAPUS */
+.btn-close {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #7b1e1e;
+}
+
+/* BUTTON EDIT */
+.btn-edit {
+    display: inline-block;
+    margin-top: 10px;
+    background: #f2b27b;
+    padding: 6px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* ADD BUTTON */
+.admin-add {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.btn-add {
+    background: #7b1e1e;
+    color: #fff;
+    padding: 12px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* PLACEHOLDER IMAGE */
+.img-placeholder {
+    width: 160px;
+    height: 160px;
+    border: 2px dashed #7b1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.admin-menu {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.admin-menu .menu-item {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.admin-menu .menu-item.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #7b1e1e;
+    bottom: -8px;
+    left: 0;
+}

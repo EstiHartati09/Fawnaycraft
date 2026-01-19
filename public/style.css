@@ -1,0 +1,576 @@
+body {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    background-color: #fffaf7;
+    color: #3e2723;
+}
+
+/* AREA ATAS */
+.top-area {
+    height: 220px;
+    background-color: #ead9c6;
+}
+
+/* JUDUL */
+.judul {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.judul h2 {
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+/* CERITA */
+.cerita {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8;
+    padding: 0 20px;
+}
+
+/* SEARCH */
+.search {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.search input {
+    width: 360px;
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid #7a5c48;
+    background: transparent;
+    font-family: inherit;
+}
+
+/* MENU KOTAK */
+.menu-kotak {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin-bottom: 45px;
+}
+
+.menu-item {
+    width: 160px;
+    height: 75px;
+    border: 1px solid #7a5c48;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #3e2723;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+/* PRODUK */
+.produk {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+
+/* CARD PRODUK */
+.produk-card {
+    width: 180px;
+    border: 1px solid #7a5c48;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.foto {
+    height: 150px;
+    background-color: #f0e4da;
+    margin-bottom: 10px;
+}
+
+/* SLIDER */
+.slider {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    position: relative;
+}
+
+/* SLIDE */
+.slide {
+    display: none;
+    animation: fade 0.8s ease-in-out;
+}
+
+.slide.active {
+    display: block;
+}
+
+/* TOMBOL SLIDE */
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #7a5c48;
+    background: transparent;
+    color: #7a5c48;
+    font-size: 22px;
+    padding: 6px 14px;
+    cursor: pointer;
+}
+
+/* POSISI */
+.slide-btn.right {
+    right: -70px;   /* JARAK DARI TEKS */
+}
+
+.slide-btn.left {
+    left: -70px;    /* JARAK DARI TEKS */
+}
+
+/* ANIMASI */
+@keyframes fade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.judul-teks {
+    text-align: center;
+    margin: 50px 0 30px;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+.kategori-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.kategori-card {
+    width: 160px;
+    height: 180px;
+    background-color: #6b0000;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding-top: 25px;
+}
+
+.kategori-card img {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+.kategori-card p {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+/* ===== TERLARIS ===== */
+.terlaris-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.terlaris-card {
+    position: relative;
+    width: 180px;
+    border: 1px solid #7a5c48;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.badge {
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    background-color: gold;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7a5c48;
+}
+
+.foto {
+    height: 150px;
+    background-color: #f0e4da;
+    margin-bottom: 10px;
+}
+
+.nama-produk {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.harga-produk {
+    font-size: 13px;
+    color: #555;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    border-bottom: 1px solid #6b0000;
+}
+
+.navbar a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+/* DETAIL */
+.detail-container {
+    display: flex;
+    gap: 60px;
+    padding: 50px;
+}
+
+.detail-image {
+    border: 2px solid #6b0000;
+    padding: 10px;
+}
+
+.foto-besar {
+    width: 300px;
+    height: 380px;
+    background-color: #f0e4da;
+}
+
+.detail-info h2 {
+    margin-bottom: 5px;
+}
+
+.harga {
+    color: #6b0000;
+    margin: 15px 0;
+}
+
+.variant {
+    border: 1px solid #6b0000;
+    background: none;
+    padding: 5px 12px;
+    margin-right: 10px;
+}
+
+.btn-pesan {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background-color: #6b0000;
+    color: white;
+    text-decoration: none;
+}
+
+/* ================= ADMIN CRUD FINAL ================= */
+
+.admin-wrapper {
+    padding: 70px;
+    background: #f9f4ee;
+    min-height: 100vh;
+}
+
+.admin-title {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+}
+
+/* GRID */
+.admin-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 45px;
+}
+
+/* CARD */
+.admin-card {
+    position: relative;
+    border: 2.5px solid #7a1f1f;
+    padding: 15px 15px 20px;
+    background: #fff;
+    height: 360px;
+}
+
+/* TOMBOL X */
+.btn-x {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    font-size: 14px;
+    color: #7a1f1f;
+    text-decoration: none;
+}
+
+/* GAMBAR */
+.admin-img-box {
+    background: #efe6dc;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-img-box img {
+    max-height: 150px;
+}
+
+/* INFO */
+.admin-info {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.admin-name {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.admin-price {
+    font-size: 13px;
+}
+
+/* EDIT */
+.btn-edit {
+    display: block;
+    margin: 12px auto 0;
+    width: 70px;
+    text-align: center;
+    background: #f0b27a;
+    padding: 6px 0;
+    border-radius: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* TAMBAH */
+.admin-add-wrap {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.btn-add {
+    background: #7a1f1f;
+    color: #fff;
+    padding: 14px 55px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+body {
+    background: #f9f4ee;
+}
+
+/* HEADER GAMBAR AFTER EDIT */
+.header-img {
+    height: 180px;
+    background: url('../images/header.jpg') center/cover no-repeat;
+    border-bottom: 3px solid #8b0000;
+}
+
+/* JUDUL TENGAH */
+.title-center {
+    text-align: center;
+    margin: 25px 0;
+    font-weight: bold;
+}
+
+/* CARD PRODUK */
+.produk-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 180px;
+    background: white;
+    border: 2px solid #8b0000;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+}
+
+.card img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.btn-edit {
+    display: inline-block;
+    background: #f4a261;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.btn-center {
+    text-align: center;
+    margin: 30px;
+}
+
+.btn-tambah {
+    background: #a44b2e;
+    color: white;
+    padding: 10px 35px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* ===== POPUP PESAN ===== */
+
+.pesan-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none; /* KUNCI UTAMA */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.pesan-popup {
+    background: #7b1e1e;
+    padding: 25px;
+    width: 320px;
+    border-radius: 14px;
+    text-align: center;
+    position: relative;
+}
+
+.close-popup {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-chat {
+    display: block;
+    background: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-wa {
+    color: #25D366;
+}
+
+.btn-ig {
+    color: #C13584;
+}
+
+
+/* ===== FIX GAMBAR DETAIL PRODUK ===== */
+
+.detail-image {
+    border: 2px solid #6b0000;
+    padding: 10px;
+    max-width: 100px;          /* BATAS LEBAR */
+}
+
+.detail-image img {
+    width: 100%;
+    max-width: 150px;          /* UKURAN GAMBAR */
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* ================= GAMBAR PRODUK (ANTI ZOOM) ================= */
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.laporan-filter {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.laporan-filter input,
+.laporan-filter button {
+    padding: 6px 10px;
+    margin: 0 5px;
+}
+
+.laporan-summary {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.summary-box {
+    border: 2px solid #000;
+    padding: 15px 30px;
+    text-align: center;
+    min-width: 160px;
+}
+
+.laporan-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.laporan-table th {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+.laporan-table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+.produk-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.produk-img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+}
+
+.produk-info {
+    margin-top: 8px;
+    text-align: center;
+}
+
+
+
